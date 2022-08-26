@@ -455,4 +455,139 @@ body {
   .header-contact__link:focus & {
     fill: var(--accent-color);
   }
+} */
+.hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/hero-480/hero-480.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(47, 48, 58, 0.4);
+}
+
+.main-title {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6153846154;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-container {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+}
+
+.hero-container__order-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  min-height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--accent-second-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/hero/hero-768.jpg");
+  }
+  .main-title {
+    margin: 0 auto;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/hero/hero-1600.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0px auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    max-width: 1600px;
+  }
+  .main-title {
+    display: block;
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-second-color);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile/hero/hero-480/hero-480@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet/hero/hero-768@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop/hero/hero-1600@2x.jpg);
+  }
+}
+/* .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin: 0px auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/hero-background.jpg");
+    background-size: cover;
+    background-color: #c4c4c4;
+}
+
+.main-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    @include font(900, 44px, 60px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-second-color);
+} */
+/* .order-button {
+    display: block;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0;
+    font-family: inherit;
+    @include font(700, 16px, 30px);
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--accent-second-color);
+}
+
+.cont-hero .order-button {
+    margin-top: 30px;
 } *//*# sourceMappingURL=main.css.map */

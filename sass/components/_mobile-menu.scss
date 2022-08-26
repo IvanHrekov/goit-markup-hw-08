@@ -61,6 +61,7 @@
       margin-left: 25px;
       margin-bottom: 48px;
 }
+
 .mobile-menu__social-item{
 display: inline-block;
 &:not(:last-child){
@@ -82,9 +83,8 @@ display: inline-block;
         height: 0px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
-    }
+    }   
 }
-
   .mobile-menu__container {
     position: relative;
     padding-top: 15px;
