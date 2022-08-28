@@ -26,6 +26,7 @@
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
+
 .advantage__describe {
   @include font(400, 14px, 24px);
   letter-spacing: 0.03em;
@@ -41,25 +42,27 @@
 
   .advantage__item {
     width: 354px;
-   
+
   }
-.advantage__item:nth-last-child(2n){
+
+  .advantage__item:nth-last-child(2n) {
     margin-right: 30px;
+  }
+
+  .advantage__title {
+    text-align: left;
+  }
+
 }
 
-.advantage__title{
-text-align: left;
-}
-
-}
-
-@media screen and (min-width: 1200px){
-.advantage__item{
+@media screen and (min-width: 1200px) {
+  .advantage__item {
     width: 270px;
-}
-.advantage__item:nth-last-child(3n) {
+  }
+
+  .advantage__item:nth-last-child(3n) {
     margin-right: 30px;
-}
+  }
 }
 /* .div-item {
     display: flex;

@@ -1,0 +1,103 @@
+.container__team{
+    background: #F5F4FA;
+    padding-bottom: 60px;
+}
+
+.team__title{
+    margin-bottom: 30px;
+    padding-top: 60px;
+    @include font (700, 28px, 33px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.team__item{
+
+    background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        margin-bottom: 30px;
+}
+.team__name-title{
+    margin-top: 30px;
+    @include font (500, 16px, 19px);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-color);
+}
+.team__profession{
+    margin-top: 10px;
+    @include font (400, 16px, 19px);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+}
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 24px;
+}
+.social-list__item:not(:last-child){
+margin-right: 10px;
+}
+.social-list__link{
+transition: background-color var(--animation-effects);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--accent-second-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+}
+.social-list__icon{
+    padding: 12px;
+    fill: #AFB1B8;
+}
+
+.team__image{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list{
+        display: flex;
+            flex-wrap: wrap;
+            flex-basis: calc((100% - 2 * 30px) / 2);
+            margin-left: 0 auto;
+  }
+.team__item{
+    width: 354px;
+    &:nth-last-child(2n){
+    margin-right: 30px;
+    margin-bottom: 30px;
+    }
+}
+
+}
+
+@media screen and (min-width: 1200px){
+.team{
+    padding-top: 94px;
+}
+.team__list{
+    display: flex;
+    margin-top: 50px;
+}
+.team__item{
+        width: 270px;
+        margin-bottom: 30px;
+        &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+}
