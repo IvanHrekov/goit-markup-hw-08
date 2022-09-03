@@ -20,7 +20,7 @@
 
 .advantage__title {
   @include font(700, 14px, 16px);
-  padding-top: 30px;
+  margin-top: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -36,12 +36,13 @@
 @media screen and (min-width: 768px) {
   .advantage__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
   }
 
   .advantage__item {
-    width: 354px;
+    max-width: 354px;
 
   }
 
@@ -57,7 +58,7 @@
 
 @media screen and (min-width: 1200px) {
   .advantage__item {
-    width: 270px;
+    max-width: 270px;
   }
 
   .advantage__item:nth-last-child(3n) {
