@@ -553,72 +553,106 @@
     </main>
     <footer class="footer">
       <div class="container footer-general-container">
-        <div class="footer-container">
-          <a href="./index.html" class="footer-logo link"
-            ><span class="web">Web</span><span class="studio">Studio</span></a
-          >
-          <address class="address-info">
-            <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer-connection">
-              <li class="connection-item list">
-                <a href="mailto:info@devstudio.com ">info@devstudio.com</a>
+        <div class="footer-contact-container">
+          <div class="footer-container">
+            <a class="footer-logo link" href="./index.html" lang="en">
+              <span class="first-part-logo">Web</span>Studio
+            </a>
+            <address class="footer-address">
+              <ul class="footer-address__list list">
+                <li class="footer-address__item">
+                  <a
+                    class="footer-address__link-ad link"
+                    href="https://goo.gl/maps/X73Tk9Yyqsu1kEGQA"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a
+                    class="footer-address__link link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a class="footer-address__link link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join-us-container">
+            <h3 class="join-us-container__title">присоединяйтесь</h3>
+            <ul class="footer-social-list list">
+              <li class="footer-social-list__item">
+                <a href="" class="footer-social-list__link link">
+                  <svg
+                    class="footer-social-list__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="connection-item phone list">
-                <a href="tel:+380961111111">+380961111111</a>
+              <li class="footer-social-list__item">
+                <a href="" class="footer-social-list__link link">
+                  <svg
+                    class="footer-social-list__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list__item">
+                <a href="" class="footer-social-list__link link">
+                  <svg
+                    class="footer-social-list__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list__item">
+                <a href="" class="footer-social-list__link link">
+                  <svg
+                    class="footer-social-list__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-link-container">
-          <h3 class="footer-connect">ПРИСОЕДИНЯЙТЕСЬ</h3>
-          <ul class="footer-social-links">
-            <li class="footer-social-links__icon list">
-              <a class="footer-social-links__link link" href="">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-links__icon list">
-              <a class="footer-social-links__link link" href="">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-links__icon list">
-              <a class="footer-social-links__link link" href="">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-links__icon list">
-              <a class="footer-social-links__link link" href="">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-link-container footer-form">
-          <h3 class="footer-connect footer-connect-sign">
-            Подпишитесь на рассылку
-          </h3>
-          <form action="" class="footer-sign-form">
-            <div class="footer-email-block">
-              <label for="footer-email"></label>
-              <input type="email" class="footer-email" placeholder="E-mail" />
-              <button type="submit" class="footer-sign-button">
-                Подписаться
-                <svg class="footer-sign-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-plane-1"></use>
+        <form class="footer-form">
+          <div class="footer-form-container">
+            <h3 class="footer-form__title">Подпишитесь на рассылку</h3>
+            <div class="footer-form-container2">
+              <input
+                class="footer-form-input-email"
+                type="email"
+                name="user_email"
+                placeholder="E-mail"
+              />
+              <button class="footer-form-button" type="submit">
+                <span class="footer-form-span">Подписаться</span>
+                <svg class="footer-icon-send" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </footer>
     <!-- <footer>
