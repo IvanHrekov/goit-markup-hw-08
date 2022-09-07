@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -135,7 +135,7 @@
             <li class="advantage__item list">
               <div class="advantage__wrapper">
                 <svg class="advantage__icon" width="70px" height="70px">
-                  <use href="./images/icons.svg#icon-antenna"></use>
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Внимание к деталям</h3>
@@ -147,7 +147,7 @@
             <li class="advantage__item list">
               <div class="advantage__wrapper">
                 <svg class="advantage__icon" width="70px" height="70px">
-                  <use href="./images/icons.svg#icon-clock"></use>
+                  <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Пунктуальность</h3>
@@ -159,7 +159,7 @@
             <li class="advantage__item list">
               <div class="advantage__wrapper">
                 <svg class="advantage__icon" width="70px" height="70px">
-                  <use href="./images/icons.svg#icon-diagram"></use>
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Планирование</h3>
@@ -171,7 +171,7 @@
             <li class="advantage__item list">
               <div class="advantage__wrapper">
                 <svg class="advantage__icon" width="70px" height="70px">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Современные технологии</h3>
@@ -518,7 +518,7 @@
                 <use href="./images/icons.svg#icon-group-1"></use></svg
             ></a>
           </li>
-          <li class="client-section__item list">
+          <li class="c list">
             <a class="client-section__link link" href=""
               ><svg class="client-section__icon" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-group-2"></use></svg
@@ -655,6 +655,89 @@
         </form>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="modal-close-btn-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="modal-window-user-info">
+            <label class="modal-form-input-desc" for="user_name"
+              ><span class="modal-lable-desc">Имя</span></label
+            >
+            <div class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user_name"
+                id="user_name"
+                required
+              />
+              <svg class="modal-form-icon" width="12px" height="12px">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+
+            <label class="modal-form-input-desc" for="user_tel"
+              ><span class="modal-lable-desc">Телефон</span></label
+            >
+            <div class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user_tel"
+                id="user_tel"
+                required
+              />
+              <svg class="modal-form-icon" width="13px" height="13px">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+
+            <label class="modal-form-input-desc" for="user_email"
+              ><span class="modal-lable-desc">Почта</span></label
+            >
+            <div class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user_email"
+                id="user_email"
+                required
+              />
+              <svg class="modal-form-icon" width="15px" height="12px">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+
+            <label class="modal-form-input-desc-text" for="user_comments"
+              ><span class="modal-lable-desc">Комментарий</span>
+              <textarea
+                class="modal-form-feald"
+                name="user_comments"
+                id="user_comments"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+
+            <input
+              class="modal-form-check vissualy-title"
+              type="checkbox"
+              name="user_aggre"
+              id="user_aggre"
+            />
+            <label class="modal-form-check-desc" for="user_aggre"
+              >Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a class="molal-check-link" href="">Условия договора</a></label
+            >
+            <button class="modal-form-submit" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <!-- <footer>
       <a href="">WebStudio</a>
       <address>
@@ -677,6 +760,7 @@
       </address>
     </footer> -->
     -->
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

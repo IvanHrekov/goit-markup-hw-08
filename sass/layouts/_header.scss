@@ -66,6 +66,8 @@
   }
 
   .page-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     transition: color var(--animation-effects);
     @include font(500, 14px, 16px);
     letter-spacing: 0.02em;
@@ -86,7 +88,7 @@
       display: block;
       width: 48px;
       height: 4px;
-      margin-top: 32px;
+      margin-top: 35px;
       border-radius: 2px;
       background-color: var(--accent-color);
     }

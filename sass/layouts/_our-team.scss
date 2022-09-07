@@ -7,7 +7,6 @@
 
 .team__title{
     margin-bottom: 30px;
-    margin-top: 60px;
     @include font (700, 28px, 33px);
     text-align: center;
     letter-spacing: 0.03em;
@@ -61,7 +60,6 @@ transition: background-color var(--animation-effects);
 
 }
 .social-list__icon{
-    padding: 12px;
     fill: #AFB1B8;
 }
 
@@ -74,7 +72,6 @@ transition: background-color var(--animation-effects);
         display: flex;
         justify-content: center;
             flex-wrap: wrap;
-            flex-basis: calc((100% - 2 * 30px) / 2);
             margin-left: 0 auto;
   }
 .team__item{

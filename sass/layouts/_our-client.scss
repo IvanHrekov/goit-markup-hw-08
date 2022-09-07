@@ -23,7 +23,9 @@
 .client-section__link {
     transition: border-color var(--animation-effects);
   display: flex;
-  min-width: 210px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 50px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   &:hover,
@@ -32,9 +34,9 @@
   }
 }
 
+
 .client-section__icon {
   transition: fill var(--animation-effects);
-  padding: 16px 52px;
   fill: #afb1b8;
   .client-section__link:focus &,
   .client-section__link:hover & {
@@ -43,10 +45,11 @@
 }
 
 @media screen and(min-width:1200px) {
+
   .client-section__link {
-    min-width: 170px;
-  }
-  .client-section__icon {
     padding: 16px 32px;
+  }
+  .client-section__list{
+    flex-wrap: nowrap;
   }
 }
