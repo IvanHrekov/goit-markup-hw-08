@@ -4,9 +4,6 @@
 }
 
 .client-section__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
   @include font(700, 28px, 33px);
   text-align: center;
@@ -44,12 +41,24 @@
   }
 }
 
-@media screen and(min-width:1200px) {
+@media screen and (min-width:767px) {
+  .client-section__link{
+    padding: 16px 58px;
+  }
+}
 
+@media screen and(min-width:1200px) {
+.client-section{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
   .client-section__link {
     padding: 16px 32px;
   }
   .client-section__list{
     flex-wrap: nowrap;
+  }
+  .client-section__title{
+    margin-bottom: 50px;
   }
 }

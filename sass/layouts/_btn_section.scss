@@ -1,9 +1,12 @@
+.btn{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
 .btn-list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
     justify-content: left;
 }
 
@@ -52,7 +55,6 @@
 @media screen and (min-width:768px) {
     .btn-list{
 justify-content: center;
-padding-bottom: 30px;
     }
     .btn-item{
         margin-right: 0;
@@ -61,4 +63,10 @@ padding-bottom: 30px;
             margin-right: 8px;
         }
     }
+}
+@media screen and(min-width:1200px) {
+    .btn {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }

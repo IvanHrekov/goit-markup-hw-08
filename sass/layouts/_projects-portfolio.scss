@@ -1,3 +1,6 @@
+.portfolio{
+    margin-top: 40px;
+}
 .proj-list__item{
     margin-bottom: 30px;
     &:nth-child(9n){
@@ -5,9 +8,7 @@
     }
 }
 
-.proj-list{
-    padding-bottom: 60px;
-}
+
 
 .portfolio-photo{
     width: 100%;
@@ -79,6 +80,10 @@
     }
 }
 @media screen and (min-width:768px) {
+    .portfolio{
+        margin-top: 30px;
+    }
+    
     .proj-list{
         display: flex;
         flex-wrap: wrap;
@@ -91,9 +96,9 @@
 }
 
 @media screen and(min-width:1200px) {
-    .proj-list{
-        padding-top: 50px;
-    }
+.portfolio{
+    margin-top: 50px;
+}
     .btn-list{
         padding-bottom: 0;
     }
